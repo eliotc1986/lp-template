@@ -1,0 +1,23 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    {{> _meta_tags }}
+    {{> _favicons }}
+    <link rel="stylesheet" href="{{root}}assets/css/app.css?{{#timestamp}}{{/timestamp}}">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      {{> _top_nav }}
+      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+      {{> body }}
+      {{> _footer }}
+      <!-- To disable scroll-to-top-function, simply delete this div -->
+      <div class="scroll-top-trigger">Scroll to Top</div>
+    </div>
+
+    {{> _google_analytics }}
+    <script src="{{root}}assets/js/app.js?{{#timestamp}}{{/timestamp}}"></script>
+  </body>
+</html>

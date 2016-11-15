@@ -1,0 +1,23 @@
+{
+  "name": "site-title-year",
+  "version": "1.0.0",
+  "authors": [
+    "METAPS <contact@metaps.com>",
+    "ZURB <foundation@zurb.com>"
+  ],
+  "description": "Site description",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "6.2.4",
+    "motion-ui": "1.2.2"
+  },
+  "private": true
+}

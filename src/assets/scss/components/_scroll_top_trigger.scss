@@ -1,0 +1,25 @@
+// Styles for scroll-to-top trigger
+.scroll-top-trigger {
+  @include set-variable-single-property(right, 15px, 20px);
+  background: $gray url('/assets/img/icons/arrow-up.svg') no-repeat center center;
+  background-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  height: 50px;
+  opacity: 0.7;
+  position: fixed;
+  text-indent: -9999px;
+  transition: opacity, 0.4s;
+  width: 50px;
+  z-index: 599;
+
+  @include breakpoint(1441px up) {
+    margin-right: -700px;
+    right: 50%;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

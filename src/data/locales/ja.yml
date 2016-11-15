@@ -1,0 +1,11 @@
+meta:
+  pages:
+    default:
+      title: 'Site Title'
+      keywords: 'Site keywords'
+      description: 'Site description'
+      url: 'Site url'
+      fb_app_id: 'Facebook app id'
+      fb_share_image: 'Absolute path to Facebook share image'
+      twitter_id: 'Twitter ID'
+      twitter_share_image: 'Absolute path to Twitter share image'

@@ -1,0 +1,31 @@
+{{!-- To modify the contents of these tags, go to src/data/locales/ja.yml --}}
+
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+{{!-- This handlebars helper is located in src/helpers/meta.js --}}
+<title>{{ meta page 'title' }}</title>
+<meta name="keywords" content="{{ ja.meta.pages.default.keywords }}" />
+<meta name="description" content="{{ ja.meta.pages.default.description }}" />
+
+<!-- ogp -->
+<meta property="og:title" content="{{ meta page 'title' }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ ja.meta.pages.default.url }}" />
+<meta property="og:image" content="{{ ja.meta.pages.default.fb_share_image }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:description" content="{{ ja.meta.pages.default.description }}" />
+<meta property="fb:app_id" content="{{ ja.meta.pages.default.fb_app_id }}" />
+<!-- //ogp -->
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="{{ ja.meta.pages.default.site }}" />
+<meta property="twitter:url" content="{{ ja.meta.pages.default.url }}" />
+<meta name="twitter:title" content="{{ ja.meta.pages.default.title }}" />
+<meta name="twitter:description" content="{{ ja.meta.pages.default.description }}" />
+<meta property="twitter:image" content="{{ ja.meta.pages.default.twitter_share_image }}" />
+<meta property="twitter:image:alt" content="{{ ja.meta.pages.default.title }}" />
+<!-- //twitter -->
