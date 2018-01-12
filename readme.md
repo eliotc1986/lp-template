@@ -1,6 +1,6 @@
 # Site Name
 
-This site uses the official ZURB Template for [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
+This site uses the ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
@@ -11,28 +11,27 @@ This site uses the official ZURB Template for [Foundation for Sites](http://foun
   - JavaScript compression
   - Image compression
 
-## Requirements
+## System Requirements
 
-  * [Node.js](http://nodejs.org/) (0.12 or greater)
+  * [Node.js](http://nodejs.org/) (8.0+ recommended)
   * [bower](http://bower.io/): `npm install bower -g`
-  * [gulp](http://gulpjs.com/): `npm install gulp-cli -g`
+  * [gulp-cli](http://gulpjs.com/): `npm install gulp-cli -g`
 
-## Set-up
+## Project Set-Up
 
-Run `bower install` and `npm install` from the `/corp` directory to install the project dependencies.
+### Install project dependencies & Run the Application
 
-### Local Development
-
-From the project root, run `gulp` or `npm start` in the terminal to run Gulp tasks and start a local server.
-
-### Production
-
-To create compressed, production-ready assets, run `npm run build` or `gulp build --production`.
-
-### Local Server
-
-Run `gulp` or `npm start` from the project root. The finished site will be created in a folder called `dist`, viewable at this URL:
+From project root, run:
 
 ```
-http://localhost:8000
+$ npm start
 ```
+
+### Create production assets
+
+To compress CSS, JS and Image for deploying to production, run:
+
+```
+$ npm run build
+```
+

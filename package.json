@@ -4,8 +4,11 @@
   "description": "site description",
   "main": "gulpfile.js",
   "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "authors": [
     "METAPS <contact@metaps.com>",
